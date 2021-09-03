@@ -12,7 +12,7 @@ ipython kernel install --prefix ~/tmp
 
 cd ~/tmp/share/jupyter/kernels/
 mv python3/ bitfusion-basic
-cat ~/Bitfusion_JupyterLab/kernel.json > ./kernel.json
+cat ~/Bitfusion_JupyterLab/kernel.json > ./bitfusion-basic/kernel.json
 
 
 jupyter kernelspec install --user tmp/share/jupyter/kernels/bitfusion-basic/
