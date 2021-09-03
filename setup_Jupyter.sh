@@ -15,5 +15,5 @@ mv python3/ bitfusion-basic
 cat ~/Bitfusion_JupyterLab/kernel.json > ./bitfusion-basic/kernel.json
 
 
-jupyter kernelspec install --user tmp/share/jupyter/kernels/bitfusion-basic/
+jupyter kernelspec install --user ~/tmp/share/jupyter/kernels/bitfusion-basic/
 
