@@ -1,6 +1,6 @@
 #!/bin/bash
-distribution=$". /etc/os-release;echo $VERSION_ID"
-gitdir=$"~/Bitfusion_JupyterLab"
+#distribution=$". /etc/os-release;echo $VERSION_ID"
+#gitdir=$"~/Bitfusion_JupyterLab"
 
 sudo apt-get update
 
@@ -9,9 +9,8 @@ sudo pip3 install jupyterlab
 ipython kernel install --prefix ~/tmp
 
 
-cd ~/tmp/share/jupyter/kernels/
-mv python3/ bitfusion-basic
-cat ~/Bitfusion_JupyterLab/kernel.json > ./bitfusion-basic/kernel.json
+mv ~/tmp/share/jupyter/kernels/python3/ ~/tmp/share/jupyter/kernels/bitfusion-basic
+cat ./kernel.json > ~/tmp/share/jupyter/kernels/bitfusion-basic/kernel.json
 
 
 jupyter kernelspec install --user ~/tmp/share/jupyter/kernels/bitfusion-basic/
